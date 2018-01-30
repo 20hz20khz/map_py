@@ -24,8 +24,8 @@ class Map(Turtle):
     rowwidth = int(math.ceil(len(rooms) / columnheight))
     self.penup()
     self.clear()
-    for row in range(rowwidth):
-      for column in range(columnheight):
+    for row in range(columnheight):
+      for column in range(rowwidth):
         try:
           if rooms[column*columnheight+row]:
             self.color('white')
